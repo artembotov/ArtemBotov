@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE Enlistment_office[ 
+<!ELEMENT Enlistment_office (Conscript+)>
+<!ELEMENT Conscript (Number_of_children|Health_group)>
+<!ATTLIST Conscript  name CDATA #REQUIRED>
+<!ATTLIST Conscript date_of_birth CDATA #REQUIRED>
+<!ELEMENT Number_of_children (#PCDATA)>
+<!ELEMENT Health_group (weight|height)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+]> 
+ 
+<Enlistment_offic>
+            <Conscript name = "Ivanov B.D." date_of_birth = "1999" >
+                 <Number_of_children> 0 </Number_of_children>
+                 <Health_group> A
+                 <weight> 192 </weight>
+                 <height> 92 </height>
+                 </Health_group>
+                 </Conscript> 
+
+             <Conscript name = "Sidorov A.V." date_of_birth = "1996" >
+                 <Number_of_children> 2 </Number_of_children>
+                 <Health_group> B
+                 <weight> 208 </weight>
+                 <height> 115 </height>
+                 </Health_group>
+                 </Conscript>  
+
+             <Conscript name = "Petrov C.N." date_of_birth = "2001" >
+                <Number_of_children> 0 </Number_of_children>
+                 <Health_group> C
+                 <weight> 173 </weight>
+                 <height> 60 </height>
+                 </Health_group>
+                 </Conscript>  
+</Enlistment_offic>
